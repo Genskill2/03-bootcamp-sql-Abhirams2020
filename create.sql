@@ -4,6 +4,8 @@ CREATE TABLE publisher (
     country TEXT
 );
 
+PRAGMA foreign_keys=ON;
+
 CREATE TABLE books (
     id INTEGER PRIMARY KEY,
     title TEXT,
