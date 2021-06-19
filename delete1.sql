@@ -1,7 +1,7 @@
 DELETE FROM books_subjects WHERE subject IN (
     SELECT id 
     FROM subjects 
-    WHERE NAME ='History';
+    WHERE NAME ='History'
 );
 
 DELETE FROM subjects
