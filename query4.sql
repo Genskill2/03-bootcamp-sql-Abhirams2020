@@ -1,5 +1,3 @@
-SELECT name
-FROM subjects,books,books_subjects
-WHERE books.title = "Atomic Habits"
-AND books.id = books_subjects.book
-AND subjects.id = books_subjects.subject;
+SELECT s.name
+FROM subjects AS s, books AS b, books_subjects
+WHERE b.title = 'Atomic Habits' AND b.id = books_subjects.book AND s.id = books_subjects.subject;
